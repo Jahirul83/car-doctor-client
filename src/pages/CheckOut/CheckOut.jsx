@@ -32,7 +32,7 @@ const CheckOut = () => {
 
         // console.log(order);
 
-        fetch('http://localhost:5000/bookings', {
+        fetch('http://localhost:3000/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
