@@ -26,7 +26,7 @@ const Login = () => {
                 // navigate(location?.state ? location?.state : '/', { replace: true });
                 // get access token
 
-                axios.post('http://localhost:3000/jwt', user, { withCredentials: true })
+                axios.post('https://car-doctor-server-red-xi.vercel.app/jwt', user, { withCredentials: true })
                     .then(res => {
                         console.log(res.data);
                         if (res.data.success) {
